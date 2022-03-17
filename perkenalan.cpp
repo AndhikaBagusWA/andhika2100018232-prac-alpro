@@ -6,5 +6,5 @@ int main(){
 	cout<<"Kelas : E"<<endl<<endl;
 	cout<<"UPDATE 0.0.1"<<endl;
 	cout<<"Testing"<<endl;
-	cout<<"Hello"<<endl;
+	cout<<"Hello world"<<endl;
 }
