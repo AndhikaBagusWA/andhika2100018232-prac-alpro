@@ -1,0 +1,10 @@
+75000 // total
+15000 // ongkir
+11250 // diskon
+78750 // yang hrs dibayar
+2
+3
+1
+4
+2
+2
