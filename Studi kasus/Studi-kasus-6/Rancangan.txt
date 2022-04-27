@@ -1,0 +1,35 @@
+Input yang disepakati :
+
+Mata kuliah : Alpro
+Banyak Mahasiswa : 3
+//looping
+Nama mahasiswa :...
+Nilai tugas :...
+Nilai uts :...
+Nilai uas :...
+
+proses :
+n_akhir = n_tugas * 20/100 + n_uts * 35/100 + n_uas * 45/100
+
+rata-rata nilai:  
+Rata-rata tugas = nilai tugas semua mahasiswa/jumlah mahasiswa
+Rata-rata uts = nilai uts semua mahasiswa/jumlah mahasiswa
+Rata-rata uas = nilai uas semua mahasiswa/jumlah mahasiswa
+
+Output yang diharapkan :
+
+=========================================
+Daftar Nilai Mahasiswa
+=========================================
+Nama matakuliah : 
+Alpro
+Nama      Nilai Tugas      Nilai UTS      Nilai UAS      Nilai Akhir
+Mhs(1)    n_tugas (1)      n_uts (1)      n_uas (1)       n_akhir(1)
+
+Mhs(2)    n_tugas (2)      n_uts (2)      n_uas (2)       n_akhir(2)
+
+Mhs(3)    n_tugas(3)       n_uts(3)       n_uas(3)        n_akhir(3)
+=========================================
+Nilai rata-rata Tugas : rata_tgs
+ Nilai rata-rata UTS  : rata_uts
+ Nilai rata-rata UAS  : rata_uas
