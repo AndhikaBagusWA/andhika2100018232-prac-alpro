@@ -11,6 +11,6 @@ int main() {
     Z.penjumlahan_vektor(X,Y);
     cout<< "\nHasil penjumlahan 2 vektor\n" << Z;
     Z.perkalian_vektor(3,X);
-    cout << "\nHasil perkalian skalar dengan vektor\n" << Z;
+    cout << "\nHasil perkalian skalar dengan vektor\n";
     cout << Z;
 }
