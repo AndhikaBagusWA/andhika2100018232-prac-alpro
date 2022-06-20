@@ -2,13 +2,13 @@
 using namespace std;
 
 class Sorting{
-
+	friend istream& operator>>(istream& in, Sorting& a);
+	friend ostream& operator<<(ostream& out, Sorting& a);
     private:
     int kunciPencarian,n,data[10];
 
     public:
-    void input();
-    void output();
+
     void minimum(int dari, int n, int &tempat);
     void tukar(int &a, int &b);
     void selection_sort();
@@ -65,34 +65,39 @@ int Sorting::pencarianBiner(int low, int high) // proses mencari data
     }
         return -1;
 }
-void Sorting::input()
+
+istream& operator>>(istream& in, Sorting& a)
 {
-    cout << "tentukan banyak data: "; cin>>n;
-    for (int i = 0; i < n; i++)
+	cout << "tentukan banyak data: "; cin>>a.n;
+    for (int i = 0; i < a.n; i++)
     {
         cout << "masukkan data ke "<<i<<" : ";
-        cin>>data[i];
+        cin>>a.data[i];
     }
+    return in;
 }
-void Sorting::output()
+
+ostream& operator<<(ostream& out, Sorting& a)
 {
-    cout <<"data sebelum diurutkan: "<<endl;
-    for (int i = 0; i < n; i++)
+	cout <<"data sebelum diurutkan: "<<endl;
+    for (int i = 0; i < a.n; i++)
     {
-        cout << data[i]<<" ";
+        cout << a.data[i]<<" ";
     }
     cout <<"\ndata setelah diurutkan: "<<endl;
-    selection_sort();
-    int x=pencarianBiner(0,n-1);
+    a.selection_sort();
+    int x=a.pencarianBiner(0,a.n-1);
     if(x!=-1)
         cout<<"data terdapat di indeks ke "<<x<<endl;
     else
         cout<<"data tidak ada"<<endl;
+	return out;
 }
+
 
 int main(){
     Sorting tes;
-    tes.input();
-    tes.output();
+    cin>>tes;
+    cout<<tes;
     return 0;
 }
