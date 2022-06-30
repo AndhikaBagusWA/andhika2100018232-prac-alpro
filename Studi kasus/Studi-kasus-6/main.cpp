@@ -25,8 +25,9 @@ void Array::input() {
   cin >> b;
   cout << "=========================================\n";
   for (int i = 1; i <= b; i++) {
+    cin.ignore();
     cout << "Nama Mahasiswa : ";
-    cin >> mhs[i];
+    getline(cin,mhs[i]);
     cout << "Masukkan Nilai Tugas : ";
     cin >> n_tgs[i];
     cout << "Masukkan Nilai UTS   : ";
